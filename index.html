@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script async src="script.js" ></script>
+  <body>
+    <section id="main">
+      <img
+        src="flower.png"
+        alt=" Lavanya Govindarajan"
+      />
+      <h1>Lavanya Govindarajan</h1>
+      <h3>Web deveper, software engineer</h3>
+      <button id="resume"><i class="fas fa-download"></i> Resume</button>
+      <button id="contact">Contact me</button>
+    </section>
+    <section id="about">
+        <div id="aboutme">
+            <h1>About me</h1>
+            <p>
+                You are asked to modify your website in order to provide a Responsive Design that works 
+                well on Mobile devices (both landscape and portrait orientaKons) as well 
+                as Desktop browsers.  You are responsible for researching and implemenKng all aspects 
+                of this on your own.   
+                </p>
+        </div>
+        <div id="basicinfo">
+            <h1>Basic Information</h1>
+            <table>
+                <tr>
+                    <td class="name">AGE:</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td class="name">EMAIL:</td>
+                    <td>lavanya.govindarajan1997@gmail.com</td>
+                </tr>
+                <tr>
+                    <td class="name">LANGUAGE</td>
+                    <td>English, French</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <div class="clear"></div>
+    <hr>
+        <h1 id="edu">Education</h1>
+       
+        <section class="level">
+            <div class="title"> 
+                <h4>2020-2024 (expected)</h4>
+                <h2>Bachalor's Degree</h2>
+            </div>
+            <div class="discription">
+                <h2>Bachalor's Degree</h2>
+                <h5>SENECA COLLEGE</h5>
+                <p>Include an HTML Form for the user to fill out their informaKon along with a message to 
+                    you (a contact me form). Your form should include the following</p>
+            </div>
+        </section>
+        <div class="clear"></div>
+
+        <form name="info_form" action="https://httpbin.org/post" method="POST">
+            <label for="name">Name: </label>
+            <input name="name" id="name" type="text" placeholder="Enter name" required />
+
+            <label for="email">Email Address: </label>
+            <input required name="email" id="email" type="email" placeholder="Enter email" />
+
+            <label for="address">Address: </label>
+            <input required name="address" id="address" type="text" placeholder="Enter address" />
+
+            <label for="city">city: </label>
+            <input required name="city" id="city" list="cities" type="text" placeholder="Enter city" />
+
+            <datalist id="cities">
+                <option value="Toronto">
+                <option value="Vancouver">
+                <option value="Calgary">
+                <option value="Montreal">
+                <option value="Hamilton">
+            </datalist>
+
+            <label for="postal_code">Postal code: </label>
+            <input required name="postal_code" id="postal_code" type="text" placeholder="Enter postal_code" />
+
+            <input required type="radio" id="question" value="Question" name="option" />
+            <label for="question">Question</label>
+            <input required type="radio" id="comment" value="Comment" name="option" />
+            <label for="comment">Comment</label>
+            <input required type="radio" id="hiring" value="Hiring" name="option" />
+            <label for="hiring">Hiring</label>
+
+            <label for="rate">Hourly rate: </label>
+            <input name="rate" id="rate" type="text" placeholder="Enter hourly rate" />
+
+            <label for="message">Message: </label>
+            <textarea required id="message" name="message" placeholder="Enter your message here"></textarea>
+            
+            <input type="hidden" name="my_name" value="" />
+            <input type="hidden" name="student_id" value="" />
+
+            <input type="submit" />
+        </form>
+      
+        <footer>
+
+        </footer>
+    
+  </body>
+</html>
